@@ -3,6 +3,7 @@ import Image from "next/image";
 import FormDomain from "../components/FormDomain";
 import { useState } from "react";
 import moment from "moment";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const Home = () => {
 	const [domainData, setDomainData] = useState(null);
@@ -126,6 +127,7 @@ const Home = () => {
 
 			</div>
 			</div>
+			<SpeedInsights/>
 		</>
 	);
 };
